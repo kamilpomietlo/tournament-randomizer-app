@@ -32,6 +32,7 @@ header {
 }
 
 .main__table--content td {
+    animation: army-randomizing 1.2s ease-in;
     font-size: 18px;
     height: 150px;
     padding: 20px 0;
@@ -85,6 +86,11 @@ td {
 hr {
     margin: 10px auto;
     width: 90vw;
+}
+
+@keyframes army-randomizing {
+    0% {opacity: 0;}
+    100% {opacity: 100%;}
 }
 
 @keyframes coin-flip {
