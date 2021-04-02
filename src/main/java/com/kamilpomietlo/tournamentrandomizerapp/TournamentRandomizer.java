@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TournamentRandomizerApp {
+public class TournamentRandomizer {
 
     public static void main(String[] args) {
-        SpringApplication.run(TournamentRandomizerApp.class, args);
+        SpringApplication.run(TournamentRandomizer.class, args);
     }
 
 }
