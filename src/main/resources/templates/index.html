@@ -38,9 +38,7 @@
     </form>
     <hr>
     <div th:unless="${armies.size() == 0}">
-        <button class="main__table--submit-button">
-            <a th:href="@{'/coinflip'}">Flip the coin!</a>
-        </button>
+        <a class="main__table--submit-button" th:href="@{'/coinflip'}">Flip the coin!</a>
     </div>
 </main>
 </body>
