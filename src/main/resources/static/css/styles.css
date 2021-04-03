@@ -8,9 +8,9 @@
 }
 
 header {
-    border-bottom: 6px double white;
+    border-bottom: 5px double white;
     display: flex;
-    font-size: 50px;
+    font-size: 56px;
     font-weight: bold;
     justify-content: center;
     margin: 60px auto;
@@ -20,20 +20,20 @@ header {
 .main__table {
     background: white;
     border: 1px solid white;
-    margin: 120px auto;
+    margin: 125px auto;
     text-align: center;
     width: 80%;
 }
 
 .main__table--header td {
-    font-size: 36px;
+    font-size: 42px;
     font-weight: bold;
     padding: 14px 0;
 }
 
 .main__table--content td {
     animation: army-randomizing 1.2s ease-in;
-    font-size: 18px;
+    font-size: 22px;
     height: 150px;
     padding: 20px 0;
 }
@@ -42,11 +42,12 @@ header {
     background: rgba(55,55,55,0.8);
     border: 2px solid white;
     display: flex;
-    font-size: 18px;
+    font-size: 20px;
     font-style: italic;
     font-weight: bold;
     margin: 40px auto;
     padding: 10px;
+    width: fit-content;
 }
 
 .main__table--submit-button:hover {
@@ -75,7 +76,7 @@ a {
     animation: coin-flip-result 1s ease-in;
     background: transparent;
     color: rgba(55,55,55,0.8);
-    font-size: 52px;
+    font-size: 54px;
     font-weight: bold;
 }
 
@@ -85,7 +86,7 @@ td {
 
 hr {
     margin: 10px auto;
-    width: 90vw;
+    width: 20vw;
 }
 
 @keyframes army-randomizing {
