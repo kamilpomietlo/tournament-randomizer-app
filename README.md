@@ -1,1 +1,1 @@
-Application which randomizes army for tournaments.
+Application used to randomize armies for tournaments and to select a player who starts the game.
