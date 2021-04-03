@@ -11,19 +11,20 @@ import java.util.List;
 public class ArmyService {
 
     private final ArmyRepository armyRepository;
+    private final List<Army> randomizedArmies = new ArrayList<>();
 
     public ArmyService(ArmyRepository armyRepository) {
         this.armyRepository = armyRepository;
     }
 
-    public List<Army> getArmies() {
+    private List<Army> getArmies() {
         return armyRepository.findAll();
     }
 
-    public List<Army> getRandomArmyList() {
+    public List<Army> randomizeArmies() {
         List<Army> armies = getArmies();
         int allArmiesCount = armies.size();
-        List<Army> randomizedArmies = new ArrayList<>();
+        randomizedArmies.clear();
 
         for (int i = 0; i < 8; i++) {
             int randomIndex = (int) (Math.random() * allArmiesCount);
@@ -34,6 +35,10 @@ public class ArmyService {
             allArmiesCount--;
         }
 
+        return randomizedArmies;
+    }
+
+    public List<Army> getRandomizedArmies() {
         return randomizedArmies;
     }
 }
